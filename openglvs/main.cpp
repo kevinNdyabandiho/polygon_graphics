@@ -23,6 +23,7 @@ int main(void)
     // Make the window's context current 
     glfwMakeContextCurrent(window);
 
+    // Array of vertices
     float vertices[] =
     {
         0, 0.5, 0.0, // top corner
@@ -30,6 +31,7 @@ int main(void)
         0.5, -0.5, 0.0 // bottom right corner
     };
 
+    //Array of three colors
     GLfloat colour[] = {
         255, 0, 0, //red
         0, 255, 0, //green
@@ -40,7 +42,7 @@ int main(void)
     {
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Render OpenGL here
+        // Rendering  OpenGL is done here
 
         glEnableClientState(GL_VERTEX_ARRAY); // tell OpenGL that you're using a vertex array for fixed-function attribute
         glEnableClientState(GL_COLOR_ARRAY);
